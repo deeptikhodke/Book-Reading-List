@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Reading List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="book-list">
+    <div class="header">
+      <h1>Book Reading List</h1>
+      <input type="text" class="book-input" placeholder="Type a book title">
+      <button class="add-btn">Add</button>
+    </div>
+
+    <div class="list">
+      <h3>Books to Read</h3>
+      <p class="alert-info">No books added yet</p>
+      
+      <ul>
+        <li id="book1">
+          The Great Gatsby
+          <div class="tools">
+            <button class="edit">EDIT</button>
+            <button class="complete"><i class="fas fa-check"></i></button>
+            <button class="delete"><i class="fas fa-times"></i></button>
+          </div>
+        </li>
+        <li id="book2">
+          To Kill a Mockingbird
+          <div class="tools">
+            <button class="edit">EDIT</button>
+            <button class="complete"><i class="fas fa-check"></i></button>
+            <button class="delete"><i class="fas fa-times"></i></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="popup">
+    <h3>Edit Book:</h3>
+    <div class="popup-body">
+      <p class="popup-info"></p>
+      <input type="text" class="popup-input" placeholder="Edit book title">
+      <button class="popup-btn accept">Submit</button>
+      <button class="popup-btn cancel">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
